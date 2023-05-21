@@ -1,0 +1,108 @@
+.Calculator__Wrapper {
+    display: grid;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Calculator__Body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 8px;
+    place-items: center;
+    place-content: center;
+}
+
+.Result__Box {
+    margin: 10px 5px 10px 10px;
+    padding-right: 10px;
+    background: hsla(0, 0%, 0%, 0.15);
+    text-align: right;
+}
+
+strong {
+    overflow: hidden;
+}
+
+.Top__Result {
+    display: block;
+    height: 40px;
+}
+
+.Bottom__Result {
+    display: block;
+    height: 40px;
+}
+
+.Button {
+    padding: 20px;
+    transition: all 0.4s linear;
+    background-color: hsla(0, 0%, 0%, 0.15);
+    border-radius: 5px;
+}
+
+.Button:hover {
+    background-color: hsla(0, 0%, 0%, 0.6);
+    transform: translateY(-4%);
+}
+
+.Button:active {
+    border: none;
+    transform: translateY(0%);
+}
+
+.Button:first-child {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.Button:nth-child(2) {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+.Button:nth-child(3) {
+    grid-column: 4/5;
+}
+
+.Button:nth-child(4) {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    height: 100%;
+}
+
+.Button:nth-child(8) {
+    grid-column: 1/2;
+    
+}
+
+.Button:nth-child(11) {
+    grid-column: 1/2;
+}
+
+.Button:nth-child(14) {
+    grid-column: 1/2;
+}
+
+.Button:last-child {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.Styling {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: 10px;
+    z-index: -1;
+}
