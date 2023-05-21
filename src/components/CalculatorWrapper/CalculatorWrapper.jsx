@@ -7,12 +7,11 @@ import './CalculatorWrapper.scss';
 function CalculatorWrapper() {
 
     const [result, setResult] = useState(0);
-    const [calculation, setCalculation] = useState(0);
 
     return (
         <div className="Calculator__Wrapper">
             <div className="Styling" />
-            <Display result={result} calculation={calculation} />
+            <Display result={result} />
             <CalculatorBody>
                 <Button result={result} setResult={setResult} value="/" />
                 <Button result={result} setResult={setResult} value="*" />

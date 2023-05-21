@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 
 
-function Display({result, calculation}) {
+function Display({result}) {
     return (
         <div className="Result__Box" id="display">
-        <strong className="Top__Result">{`${calculation}\n${result}`}</strong>
+        <strong className="Top__Result">{result}</strong>
         </div>
     )
 }
