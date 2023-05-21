@@ -2,6 +2,10 @@
 
 This is my solution to the freeCodeCamps Frontend React Calculator Project.
 
-## Overview
+## Live Site
 
-Project initialized and being worked on.
+[React Calculator](https://davidbayodefcc4.netlify.app)
+
+## Screenshot
+
+![Screenshot](/screenshot/screenshot.PNG)
